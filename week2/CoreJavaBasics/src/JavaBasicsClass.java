@@ -104,32 +104,5 @@ public class JavaBasicsClass {
 
         System.out.printf("$" + "%.2f", totalSale);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
