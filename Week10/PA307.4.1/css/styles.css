@@ -1,0 +1,77 @@
+.mainContainer{
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border: 2px solid;
+    display: flex;
+    flex-wrap: wrap;
+}
+.boxes1{
+    border: 3px solid;
+    border-color: blue;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+   
+}
+#section1{
+    width: 100vw;
+    height: 60vh;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 5px solid;
+    border-color: rgb(8, 10, 124);
+    background-color: rgb(204, 197, 197);
+}
+#box1{
+    width:59vw;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50%;
+   
+}
+#box2{
+    width:39vw;
+    font-size: 15px;
+    height: 50%;
+}
+#box3{
+    width:99vw;
+    height: 48%;
+}
+#img{
+    width: 40%;
+    height: 100%;
+}
+#title{
+    padding-top: 60px;
+    position:absolute;
+    padding-left: 31%;
+    
+}
+#name{
+    padding-left: 10%;
+}
+#section2{
+    height: auto;
+    width: 50vw;
+    border: 5px solid;
+    border-color: rgb(194, 25, 25);
+    background-color: rgb(204, 197, 197);
+
+    
+}
+#section3{
+    margin-left: 5px;
+    height: auto;
+    width: 45vw;
+    border: 5px solid;
+    border-color: rgb(13, 156, 13);
+    background-color: rgb(204, 197, 197);
+
+}
