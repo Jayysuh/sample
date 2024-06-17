@@ -1,0 +1,26 @@
+PostMan:
+    -POST:
+            {
+            "title": "Spring Boot Tutorial #1",
+            "description": "Description for tut#1",
+            "published": 0
+            }
+
+            SELECT * FROM tutorials;
+
+    -PUT: //Updates
+            {
+            "title": "Spring Boot Tutorial #1",
+            "description":"This is a Spring Boot tutorial",
+            "published": 1
+            }
+
+    -GET:
+        http://localhost:8080/api/tutorials
+    -GET by ID:
+        (GET) http://localhost:8080/api/tutorials/3
+
+    -DELETE a tutorial:
+        (DELETE) http://localhost:8080/api/tutorials/4
+    -DELETE all tutorials:
+        (DELETE) http://localhost:8080/api/tutorials

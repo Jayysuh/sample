@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+    <h1>Spring Boot File Upload Example</h1>
+    <hr/>
+    <h4>Upload Single File:</h4>
+    <form method="POST" th:action="@{/uploadFile}" enctype="multipart/form-data">
+        <input type="file" name="file"/> <br/><br/>
+        <button type="submit">Submit</button>
+    </form>
+    <hr/>
+
+    <!-- One File:
+        Above, we have a simple form that maps to the /uploadFile URL.
+        Notice that its enctype is multipart/form-data and its input type is file.
+        At the bottom, it has a message <div> tag to display the success message. -->
+
+    <h4>Upload Multiple Files:</h4>
+    <form method="POST" th:action="@{/uploadFiles}"
+          enctype="multipart/form-data">
+        <input type="file" name="files" multiple/> <br/><br/>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div th:if="${message}">
+        <h2 th:text="${message}"/>
+    </div>
+
+    <!--
+    Multiple Files:
+        The only thing different from the previous HTML is that the mapping is to
+        the /uploadFiles endpoint, and the input has a multiple attribute,
+        allowing you to select more than one file. Also, since @RequestParam is a
+        file, we have to use the same name in HTML.-->
+</body>
+</html>
+
